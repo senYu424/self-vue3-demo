@@ -1,0 +1,31 @@
+{
+  "name": "party-member-introduction-letter",
+  "version": "1.0.0",
+  "description": "党员组织关系介绍信预览和导出系统",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build",
+    "preview": "vite preview",
+    "dev:client": "vite",
+    "dev": "concurrently -n ai,vue \"cd ai-server && node index.js\" \"npm run dev:client\""
+  },
+  "dependencies": {
+    "docx-preview": "^0.3.7",
+    "docxtemplater": "^3.67.5",
+    "element-plus": "^2.13.0",
+    "file-saver": "^2.0.5",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "jszip": "~3.10.1",
+    "jszip-utils": "^0.1.0",
+    "pizzip": "^3.2.0",
+    "vue": "^3.5.18",
+    "vue-i18n": "^10.0.4",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.0",
+    "concurrently": "^9.2.1",
+    "vite": "^4.3.0"
+  }
+}

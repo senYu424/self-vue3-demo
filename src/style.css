@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+#app {
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+/* 全局样式 */
+input, select, textarea, button {
+  font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #4e6ef2;
+  box-shadow: 0 0 0 2px rgba(78, 110, 242, 0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+  
+  .preview-container {
+    padding: 15px;
+  }
+  
+  .introduction-letter,
+  .receipt {
+    padding: 20px;
+  }
+  
+  .form-container {
+    padding: 20px;
+  }
+}
+
+/* 打印样式 */
+@media print {
+  body {
+    background: white !important;
+  }
+  
+  .form-container,
+  .action-buttons {
+    display: none !important;
+  }
+  
+  .preview-container {
+    background: white !important;
+    padding: 0 !important;
+  }
+  
+  .introduction-letter,
+  .receipt {
+    border: none !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+}
