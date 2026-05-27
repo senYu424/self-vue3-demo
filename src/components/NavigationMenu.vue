@@ -4,6 +4,7 @@
     <router-link to="/letter" class="nav-link">介绍信</router-link>
     <router-link to="/settings" class="nav-link">设置</router-link>
     <router-link to="/copy-test" class="nav-link">复制</router-link>
+    <router-link to="/gauge" class="nav-link">仪表盘</router-link>
   </nav>
 </template>
 

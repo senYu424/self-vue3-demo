@@ -5,6 +5,7 @@ import settingView from '../views/pages/settings.vue'
 import copyView from '../views/pages/CopyTestView.vue'
 import AiChatView from '../views/ai-pages/AiChatView.vue'
 import DocPreviewView from '../views/pages/DocPreviewView.vue'
+import GaugeView from '../views/pages/ybp.vue'
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/doc-preview',
     name: 'doc-preview',
     component: DocPreviewView
+  },
+  {
+    path: '/gauge',
+    name: 'gauge',
+    component: GaugeView
   },
   {
     path: '/:pathMatch(.*)*', // 捕获所有路由
